@@ -12,7 +12,6 @@ html {
 
 .container {
   height: 100vh;
-  width: 80%;
   display: flex;
   margin: auto;
   align-items: center;
@@ -20,13 +19,13 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
-  #content { 
+  .container { 
       width: 80%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  #content {
+  .container {
       width: 1200px;
   }
 }
@@ -71,4 +70,21 @@ a:visited {color: white}
 
 #about {
   text-align: right;
+}
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#rewind-button {
+  display: inline-block;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  z-index: 1000;
 }
