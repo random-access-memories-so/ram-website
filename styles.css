@@ -1,28 +1,22 @@
-html, body, #container {
+/* html, body {
   height: 100%;
-}
+} */
 
 html {
   color: white;
   font-family: 'Poppins', sans-serif;
   font-size: large;
   background-color: #0c0c0c;
+  scroll-behavior: smooth;
 }
 
-h1 {
-  margin: 2em 0 0 0;
-}
-
-#container {
+.container {
+  height: 100vh;
+  width: 80%;
   display: flex;
   margin: auto;
   align-items: center;
   justify-content: center;
-}
-
-#content {
-  margin: auto;
-  width: 80%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -37,12 +31,12 @@ h1 {
   }
 }
 
-#description {
-  margin: 1.5em 0 1.5em 0;
+h1 {
+  margin: 2em 0 0 0;
 }
 
-.flex-container {
-  display: flex;
+#description {
+  margin: 1.5em 0 1.5em 0;
 }
 
 .flex-child {
@@ -66,9 +60,15 @@ button {
   cursor: pointer;
   border-width: thin;
 }
-
-a {
-  cursor: pointer;
+button:hover {
+  color: black;
+  background-color: white;
 }
 
+a {cursor: pointer}
+a:link {color: white}
 a:visited {color: white}
+
+#about {
+  text-align: right;
+}
