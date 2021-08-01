@@ -56,6 +56,10 @@ model-viewer {
   width: 100%;
 }
 
+model-viewer {
+  --poster-color: transparent;
+}
+
 .desktop-viewer model-viewer {
   height: 600px;
 }
@@ -141,7 +145,12 @@ a:visited {color: white}
   }
 
   #rewind-button {
-    bottom: 20px;
-    left: 20px;
+    bottom: 15px;
+    left: 15px;
+    padding: 0.75em;
+  }
+
+  #about {
+    text-align: center;
   }
 }
