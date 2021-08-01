@@ -17,7 +17,7 @@ html {
 }
 
 #logo img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 .container {
@@ -128,7 +128,8 @@ a:visited {color: white}
 
   #logo {
     left: 50%;
-    margin-left: -60px;
+    width: 80px;
+    margin-left: -40px;
   }
 
   h1 {
@@ -152,5 +153,17 @@ a:visited {color: white}
 
   #about {
     text-align: center;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .mobile-viewer {
+    height: 250px;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  .mobile-viewer {
+    height: 180px;
   }
 }
