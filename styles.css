@@ -52,6 +52,18 @@ h1 {
   flex: 1;
 }
 
+model-viewer {
+  width: 100%;
+}
+
+.desktop-viewer model-viewer {
+  height: 600px;
+}
+
+.mobile-viewer {
+  height: 300px;
+}
+
 .button-container {
   margin: 1.5em 0 1.5em 0;
 }
@@ -97,4 +109,39 @@ a:visited {color: white}
   transition: background-color .3s,
     opacity .5s, visibility .5s;
   z-index: 1000;
+}
+
+@media screen and (min-width: 800px) {
+  .mobile-viewer { 
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: small;
+  }
+
+  #logo {
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+
+  .container {
+    text-align: center;
+    width: 98%;
+  }
+
+  .desktop-viewer {
+    display: none;
+  }
+
+  #rewind-button {
+    bottom: 20px;
+    left: 20px;
+  }
 }
