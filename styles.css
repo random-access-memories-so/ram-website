@@ -20,6 +20,15 @@ html {
   max-width: 100%;
 }
 
+#mobile-logo {
+  margin: -30px;
+}
+
+#mobile-logo img {
+  width: 70px;
+  max-width: 100%;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -119,6 +128,10 @@ a:visited {color: white}
   .mobile-viewer { 
     display: none;
   }
+
+  #mobile-logo {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -127,9 +140,7 @@ a:visited {color: white}
   }
 
   #logo {
-    left: 50%;
-    width: 70px;
-    margin-left: -35px;
+    display: none;
   }
 
   h1 {
