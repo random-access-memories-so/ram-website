@@ -10,6 +10,16 @@ html {
   scroll-behavior: smooth;
 }
 
+#logo {
+  width: 120px;
+  position: absolute;
+  left: 2em;
+}
+
+#logo img {
+  max-width:100%;
+}
+
 .container {
   height: 100vh;
   display: flex;
